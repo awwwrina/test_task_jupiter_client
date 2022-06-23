@@ -6,6 +6,7 @@
     display: flex;
     justify-content: space-between;
     .filter {
+        list-style-type: none;
         border: none;
         background-color: transparent;
         color: $brown;
@@ -13,6 +14,49 @@
         width: 100%;
         &_active {
             color: $active;
+        }
+    }
+}
+
+@media (max-width: 1040px) and (min-width: 375px) {
+    .tabs {
+        height: 50px;
+        width: 330px;
+        background-color: $white;
+        border: 1px solid $dropdownBorder;
+        border-radius: 6px;
+        padding: 0 16px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        &_expanded  {
+            height: 100%;
+        }
+        .filter {
+            list-style-type: none;
+            border: none;
+            background-color: transparent;
+            color: $brown;
+            cursor: pointer;
+            width: 100%;
+            position: relative;
+            order: 1;
+            margin: 13px auto;
+            &_active {
+                order: 0;
+                &:after {
+                content: '';
+                width: 1px;
+                height: 1px;
+                border: 7px solid transparent;
+                border-top: 7px solid $dropdownTrigger;
+                position: absolute;
+                right: 0;
+                top: 8px;
+                z-index: 9999;
+                }
+                    
+            }
         }
     }
 }

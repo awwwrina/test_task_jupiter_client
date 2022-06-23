@@ -35,9 +35,10 @@
     }
     .portfolio {
         text-align: center;
-        margin-top: 98px;
+        margin-top: 93px;
         color: $white;    
-        font-weight: 400;  
+        font-weight: 400;
+        font-size: 72px;  
     }
     .description {
         margin: 35px auto 0;
@@ -47,3 +48,32 @@
         line-height: 32px;
     }
 }
+
+@media (max-width: 1191px) and (min-width: 1041px) {
+    .header .navigation {
+        width: 1040px;
+        &__link {
+            width: 450px;
+        }
+    }
+} 
+@media (max-width: 1040px) and (min-width: 375px) {
+    .header {
+        padding-left: 23px;
+        padding-right: 23px;
+        .navigation {
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        .description {
+            margin-top: 22px;
+            width: 100%;
+        }
+        .portfolio {
+            margin-top: 80px;
+            font-size: 56px;  
+        }
+    }
+
+} 

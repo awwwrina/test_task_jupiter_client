@@ -27,3 +27,15 @@
 .active {
     box-shadow: inset  0 0 0  7px $active;
 }
+
+@media (max-width: 1191px) and (min-width: 1041px) {
+    .card {
+        max-width: 330px;
+    }
+} 
+@media (max-width: 1040px) and (min-width: 375px) {
+    .card {
+        max-width: 330px;
+        background-size: 330px auto;
+    }
+} 

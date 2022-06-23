@@ -3,14 +3,14 @@ import CardSection from '../cardsSection/CardsSection';
 import './App.scss';
 
 function App() {
-  return (
-    <>
-      <Header/>
-      <main>
-        <CardSection/>
-      </main>
-    </>
-  )
+	return (
+		<>
+			<Header/>
+			<main>
+				<CardSection/>
+			</main>
+		</>
+	)
 }
 
 export default App;

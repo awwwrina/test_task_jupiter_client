@@ -14,7 +14,7 @@ const CardSection = () => {
 
     useEffect(() => {
         cards.length === 0 && dispatch(fetchCards())
-    },[])
+    },[dispatch, cards.length])
 
     function renderItemList(arr) {
         const items = arr.map(item => {
