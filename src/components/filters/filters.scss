@@ -1,0 +1,18 @@
+@import '../../style/variables.scss';
+
+.tabs {
+    margin: 0 auto;
+    width: 563px;
+    display: flex;
+    justify-content: space-between;
+    .filter {
+        border: none;
+        background-color: transparent;
+        color: $brown;
+        cursor: pointer;
+        width: 100%;
+        &_active {
+            color: $active;
+        }
+    }
+}

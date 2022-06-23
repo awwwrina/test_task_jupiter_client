@@ -1,0 +1,49 @@
+@import '../../style/variables.scss';
+.header {
+    height: 400px;
+    background-color: $headerBGColor;
+    padding-top: 16px;
+    .navigation {
+        margin: 0 auto ;
+        width: 1170px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        a {
+            text-decoration: none;
+            color: $white;
+        }
+        &__link {
+            width: 522px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            li {
+                list-style: none;
+            }
+        }
+        .logo {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            .agency {
+                margin-left: 10px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+    .portfolio {
+        text-align: center;
+        margin-top: 98px;
+        color: $white;    
+        font-weight: 400;  
+    }
+    .description {
+        margin: 35px auto 0;
+        text-align: center;
+        width: 570px;
+        color: $lightGrey; 
+        line-height: 32px;
+    }
+}

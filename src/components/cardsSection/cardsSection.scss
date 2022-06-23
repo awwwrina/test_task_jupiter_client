@@ -1,0 +1,15 @@
+@import '../../style/variables.scss';
+
+.cards {
+    background-color: $BGColor;
+    padding: 80px 0 184px;
+    .grid {
+        margin-top: 75px;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3, auto);
+        gap: 30px;
+        justify-content: center;
+    }
+
+}

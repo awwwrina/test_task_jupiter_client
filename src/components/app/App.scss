@@ -1,0 +1,53 @@
+@import '../../style/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700;800;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+p, ul {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.fz16 {
+  font-size: 16px;
+}
+.fz24 {
+  font-size: 24px;
+}
+.fz40 {
+  font-size: 40px;
+}
+.fz72 {
+  font-size: 72px;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 7px;
+  cursor: pointer;
+  &__contact{
+    background-color: transparent;
+    color: $white;
+    border: 1px solid $grey;
+    padding: 15px 40px;
+    
+  }
+  &__loading {
+    display: block;
+    margin: 80px auto 0;
+    background-color: $white;
+    border: none;
+    padding: 15px 45px;
+    box-shadow: 0px 3px 9px $btnShadow;
+
+  }
+}
